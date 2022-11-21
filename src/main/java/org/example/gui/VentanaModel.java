@@ -6,12 +6,7 @@ import org.example.base.Juego;
 
 import java.util.ArrayList;
 
-/**
- * Modelo para la ventana
- *
- * @author Santiago Faci
- * @curso 2015-2016
- */
+
 public class VentanaModel {
 
     private ArrayList<Juego> listaJuegos;
@@ -38,9 +33,7 @@ public class VentanaModel {
         animal.setPrecio(juegoModificado.getPrecio());
     }
 
-    /**
-     * Elimina el animal actual
-     */
+
     public void eliminar() {
         listaJuegos.remove(posicion);
     }
@@ -66,22 +59,14 @@ public class VentanaModel {
         return null;
     }
 
-    /**
-     * Obtiene el animal que está en primera posición en la lista
-     *
-     * @return
-     */
+
     public Juego getPrimero() {
 
         posicion = 0;
         return listaJuegos.get(posicion);
     }
 
-    /**
-     * Obtiene el animal que está en la posición anterior a la actual
-     *
-     * @return
-     */
+
     public Juego getAnterior() {
 
         if (posicion == 0)
@@ -91,11 +76,7 @@ public class VentanaModel {
         return listaJuegos.get(posicion);
     }
 
-    /**
-     * Obtiene el animal que está en la posición siguiente a la actual
-     *
-     * @return
-     */
+
     public Juego getSiguiente() {
 
         if (posicion == listaJuegos.size() - 1)
@@ -105,11 +86,6 @@ public class VentanaModel {
         return listaJuegos.get(posicion);
     }
 
-    /**
-     * Obtiene el animal que está en la última posición de la lista
-     *
-     * @return
-     */
     public Juego getUltimo() {
 
         posicion = listaJuegos.size() - 1;

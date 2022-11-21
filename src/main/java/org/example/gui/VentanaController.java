@@ -138,11 +138,7 @@ public class VentanaController implements ActionListener, KeyListener {
         }
     }
 
-    /**
-     * Carga los datos de un animal en la vista
-     *
-     * @param juego
-     */
+
     private void cargar(Juego juego) {
         if (juego == null)
             return;

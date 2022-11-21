@@ -1,11 +1,5 @@
 package org.example.base;
 
-/**
- * Clase que representa a un Animal
- *
- * @author Santiago Faci
- * @version curso 2015-2016
- */
 public class Juego {
 
     private String nombre;
